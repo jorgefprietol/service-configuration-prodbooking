@@ -8,3 +8,9 @@ Contenido del vídeo:
 2. Creando properties por perfiles para los Microservicios
 3. Creando y configurando el proyecto Spring Config Server
 4. Conectando Microservicios Producto y Booking al Config Server 
+
+
+vault server:
+vault server -dev --dev-root-token-id="0000-0000-0000-000000000000"
+para registrar los secrets en vault:
+vault kv put secret/booking-microservicio @booking.microservicio.json
